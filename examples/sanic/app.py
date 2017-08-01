@@ -23,6 +23,8 @@ sio.attach(app)
 class TestNamespace(socketio.AsyncNamespace):
 
     def on_connect(self, sid, environ):
+        import pdb;pdb.set_trace()
+        print('connection established')
         pass
 
     def on_disconnect(self, sid):
